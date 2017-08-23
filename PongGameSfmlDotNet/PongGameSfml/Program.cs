@@ -1,4 +1,5 @@
-﻿using SFML.Graphics;
+﻿using PongGameSfml.Enteties;
+using SFML.Graphics;
 using SFML.Window;
 namespace PongGameSfml
 {
@@ -7,19 +8,21 @@ namespace PongGameSfml
         static void Main(string[] args)
         {
             
-            RenderWindow window = new RenderWindow(new VideoMode(200, 200), "SFML works!", Styles.Default);
+            RenderWindow rw = new RenderWindow(new VideoMode(800, 600), "SFML works!", Styles.Default);
+            rw.SetFramerateLimit(60);
+            rw.Closed += (sender, arg) => rw.Close();
+            Paddle paddle = new Paddle().CreatePaddle(rw);
 
-            window.Closed += (sender, arg) => window.Close();
-            CircleShape shape = new CircleShape(100.0f);
-            shape.FillColor = Color.Green;
-
-            while (window.IsOpen)
+            while (rw.IsOpen)
             {
-                window.DispatchEvents();
+                rw.DispatchEvents();
 
-                window.Clear(Color.Black);
-                window.Draw(shape);
-                window.Display();
+                rw.Clear(Color.Black);
+                paddle.update();
+                rw.Draw(paddle);
+                
+                rw.Display();
+                
             }
         }
     }
