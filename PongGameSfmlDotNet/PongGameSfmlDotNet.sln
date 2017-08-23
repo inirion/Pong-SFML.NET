@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PongGameSfml", "PongGameSfml\PongGameSfml.csproj", "{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SfmlDLLs", "SfmlDLLs\SfmlDLLs.csproj", "{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Debug|x64.ActiveCfg = Debug|x64
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Debug|x64.Build.0 = Debug|x64
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Release|x64.ActiveCfg = Release|x64
+		{88873CDB-B06D-4C7F-9805-AD6DADEBB15F}.Release|x64.Build.0 = Release|x64
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Debug|x64.Build.0 = Debug|Any CPU
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Release|x64.ActiveCfg = Release|Any CPU
+		{0CB408CE-9EC8-43F1-B200-9DFF82DC9DFD}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
