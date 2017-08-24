@@ -1,12 +1,12 @@
-﻿using SFML.Graphics;
+﻿using PongGameSfml.Enums;
+using SFML.Graphics;
 
 namespace PongGameSfml.Logic
 {
     class Collision
     {
-        public Collision() { }
 
-        public bool CheckIfBallCollidedWithPaddle(FloatRect object1, FloatRect object2)
+        public static bool CheckIfBallCollidedWithPaddle(FloatRect object1, FloatRect object2)
         {
             if (object1.Intersects(object2))
             {
@@ -15,13 +15,17 @@ namespace PongGameSfml.Logic
             return false;
         }
 
-        public bool CheckIfBallOrPaddleCollidedWithBoundry(FloatRect object1, FloatRect object2)
+        public static Boundries WhichBoundryDoesPaddleCollideTo(RectangleShape paddle, RenderWindow rw)
         {
-            if (!object1.Intersects(object2))
-            {
-                return true;
-            }
-            return false;
+            Boundries collision = Boundries.None;
+
+            bool TopCollision = paddle.Position.Y <= 0 ? true : false;
+            bool DownCollision = paddle.Position.Y + paddle.Size.Y >= rw.GetView().Size.Y ? true : false;
+
+            if (TopCollision) collision = Boundries.Top;
+            if (DownCollision) collision = Boundries.Down;
+
+            return collision;
         }
     }
 }

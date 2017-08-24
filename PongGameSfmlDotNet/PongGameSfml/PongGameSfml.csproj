@@ -81,7 +81,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enteties\Paddle.cs" />
+    <Compile Include="Enteties\PaddleEntity.cs" />
+    <Compile Include="Enteties\Player.cs" />
+    <Compile Include="Enums\Boundries.cs" />
     <Compile Include="Logic\Collision.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,7 +98,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GUI\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
