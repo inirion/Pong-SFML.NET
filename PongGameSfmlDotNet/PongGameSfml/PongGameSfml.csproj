@@ -81,12 +81,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Enteties\PaddleEntity.cs" />
-    <Compile Include="Enteties\Player.cs" />
+    <Compile Include="Enteties\Ball.cs" />
+    <Compile Include="Enteties\Paddle.cs" />
+    <Compile Include="Enteties\Players\Enemy.cs" />
+    <Compile Include="Enteties\Players\Player.cs" />
+    <Compile Include="Enums\BallTypes.cs" />
     <Compile Include="Enums\Boundries.cs" />
-    <Compile Include="Logic\Collision.cs" />
+    <Compile Include="Enums\PaddleTypes.cs" />
+    <Compile Include="Factories\BallFactory.cs" />
+    <Compile Include="Factories\PaddleFactory.cs" />
+    <Compile Include="GameEngine\PongGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Randomizers\IRandomizer.cs" />
+    <Compile Include="Utils\Randomizers\RandomGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -98,7 +106,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Utils\" />
+    <Folder Include="Logic\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
