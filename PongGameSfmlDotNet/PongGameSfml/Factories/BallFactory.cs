@@ -20,6 +20,7 @@ namespace PongGameSfml.Factories
                     b.BallObject = new CircleShape(radius);
                     b.BallObject.Origin = new Vector2f(b.BallObject.Radius, b.BallObject.Radius);
                     b.BallObject.Position = new Vector2f(rw.GetView().Size.X / 2, rw.GetView().Size.Y/2);
+                    b.StatingPosition = b.BallObject.Position;
                     break;
             }
 

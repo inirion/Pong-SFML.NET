@@ -82,13 +82,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enteties\Ball.cs" />
+    <Compile Include="Enteties\Board.cs" />
     <Compile Include="Enteties\Paddle.cs" />
     <Compile Include="Enteties\Players\Enemy.cs" />
     <Compile Include="Enteties\Players\Player.cs" />
     <Compile Include="Enums\BallTypes.cs" />
+    <Compile Include="Enums\BoardTypes.cs" />
     <Compile Include="Enums\Boundries.cs" />
     <Compile Include="Enums\PaddleTypes.cs" />
     <Compile Include="Factories\BallFactory.cs" />
+    <Compile Include="Factories\BoardFactory.cs" />
     <Compile Include="Factories\PaddleFactory.cs" />
     <Compile Include="GameEngine\PongGame.cs" />
     <Compile Include="Program.cs" />

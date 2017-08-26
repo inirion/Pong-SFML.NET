@@ -1,7 +1,4 @@
-﻿using PongGameSfml.Enteties;
-using PongGameSfml.Enums;
-using PongGameSfml.Factories;
-using PongGameSfml.GameEngine;
+﻿using PongGameSfml.GameEngine;
 using SFML.Graphics;
 using SFML.Window;
 namespace PongGameSfml

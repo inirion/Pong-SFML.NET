@@ -16,17 +16,18 @@ namespace PongGameSfml.Factories
             switch (type)
             {
                 case PaddleTypes.Player:
-                    p.Velocity = 5.0f;
+                    p.Velocity = 1.0f;
                     p.PaddleObject = new RectangleShape(new Vector2f(width, height));
                     p.PaddleObject.Origin = new Vector2f(p.PaddleObject.Size.X / 2, p.PaddleObject.Size.Y / 2);
                     p.PaddleObject.Position = new Vector2f(2 * p.PaddleObject.Size.X, rw.GetView().Size.Y / 2);
-                    
+                    p.StartingPosition = p.PaddleObject.Position;
                     break;
                 case PaddleTypes.Enemy:
                     p.Velocity = 2.5f;
                     p.PaddleObject = new RectangleShape(new Vector2f(width, height));
                     p.PaddleObject.Origin = new Vector2f(p.PaddleObject.Size.X / 2, p.PaddleObject.Size.Y / 2);
                     p.PaddleObject.Position = new Vector2f(rw.GetView().Size.X - (2 * p.PaddleObject.Size.X), rw.GetView().Size.Y / 2);
+                    p.StartingPosition = p.PaddleObject.Position;
                     break;
             }
 

@@ -7,10 +7,11 @@ namespace PongGameSfml.Enteties
     {
         private RectangleShape _paddle;
         private float _velocity;
-        //private PaddleStrategy update;
+        private Vector2f _startingPosition;
 
         public RectangleShape PaddleObject { get => _paddle; set => _paddle = value; }
         public float Velocity { get => _velocity; set => _velocity = value; }
+        public Vector2f StartingPosition { get => _startingPosition; set => _startingPosition = value; }
 
         public void Draw(RenderTarget target, RenderStates states)
         {
@@ -20,6 +21,11 @@ namespace PongGameSfml.Enteties
         public void move(float xAexis, float yAexis)
         {
             PaddleObject.Position = new Vector2f(xAexis* Velocity, yAexis*Velocity) + PaddleObject.Position;
+        }
+
+        public void resetPosition()
+        {
+            this._paddle.Position = this.StartingPosition;
         }
     }
 }
